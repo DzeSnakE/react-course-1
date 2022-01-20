@@ -1,5 +1,5 @@
 # React course 1
-#BONAZZI PierreJean
+# BONAZZI PierreJean
 
 ## Getting started
 
