@@ -1,25 +1,19 @@
 import React from 'react';
+import Card from "./Card";
 
-//définition de l'interface en TS
-interface List{
-    id :number,
-    title :string,
-    items :any[],
-};
+interface List {
+    id: number,
+    title: string,
+    items: any[],
+}
 
-//component
-const List = (props :List) => {
-
-    //destructuration de props
+const List = (props: List) => {
     const {id, title, items} = props;
     console.log(id, title);
-
     return (
-        <div><h5>{ title }</h5></div>
-
-
+        <div><h5>{title}</h5>
+            {items.map((currentElement)=><Card id={currentElement.id} title={currentElement.title} description={currentElement.description}/>)}</div>
     )
 }
 
-//export
 export default List;
