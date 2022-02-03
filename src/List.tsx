@@ -1,18 +1,18 @@
 import React from 'react';
-import Card from "./Card";
+import Card, {CardInterface} from "./Card";
 
-interface List {
-    id: number,
+export interface ListInterface {
+    id: string,
     title: string,
-    items: any[],
+    items: CardInterface[],
 }
 
-const List = (props: List) => {
+const List = (props: ListInterface) => {
     const {id, title, items} = props;
     console.log(id, title);
     return (
         <div><h5>{title}</h5>
-            {items.map((currentElement)=><Card id={currentElement.id} title={currentElement.title} description={currentElement.description}/>)}</div>
+            {items.map((currentElement : CardInterface)=><Card id={currentElement.id} title={currentElement.title} description={currentElement.description}/>)}</div>
     )
 }
 
