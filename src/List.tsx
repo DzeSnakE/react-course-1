@@ -11,8 +11,8 @@ const List = (props: ListInterface) => {
     const {id, title, items} = props;
     console.log(id, title);
     return (
-        <div><h5>{title}</h5>
-            {items.map((currentElement : CardInterface)=><Card id={currentElement.id} title={currentElement.title} description={currentElement.description}/>)}</div>
+        <div style={{backgroundColor:"darkgray"}}><h3>{title}</h3>
+            {items.map((currentElement : CardInterface)=><Card id={currentElement.id} title={currentElement.title} description={currentElement.description} to={currentElement.to} date={currentElement.date}/>)}</div>
     )
 }
 

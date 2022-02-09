@@ -1,5 +1,6 @@
-# React course 1
 # BONAZZI PierreJean
+# React course 1
+
 
 ## Getting started
 
@@ -17,8 +18,8 @@ yarn start
 ## Goals
 
 You have to create a todo list with these features:
-- Create new todo with title / description / priority / assigned to
-- Manage status (completed or not)
+- Create new todo with title / description / priority / assigned to  (fait)
+- Manage status (completed or not) (fait)
 - Create new list
 - Add filters
 - Edit todo
@@ -26,3 +27,5 @@ You have to create a todo list with these features:
 - Drag and drop todo (using [beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd))
 - List virtualization (using [react-window](https://github.com/bvaughn/react-window))
 - Use React context
+
+###Pierre-Jean BONAZZI - LP WMCE
